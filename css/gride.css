@@ -1,0 +1,36 @@
+/*grids*/
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.row {
+    /*background-color: lightgray;*/
+    display: flex;
+    margin-bottom: 1rem;
+    /*gap: 1rem;*/
+}
+.column {
+    /*background-color: lightgray;*/
+    flex: 1;
+    /*gap: 1rem;*/
+}
+.col-two-thirds {
+    /*background-color: lightgray;*/
+    flex: 2;
+}
+@media only screen and (max-width: 768px) {
+    .row {
+        flex-wrap: wrap;
+    }
+    .column {
+        flex-basis: 100%;
+    }
+    .nav__menu {
+        display: none;
+    }
+    .nav__btn-link {
+        display: none;
+    }
+}
