@@ -101,9 +101,31 @@
 .main {
     font-family: SpaceGrotesk-regular;
 }
-.main-CaseStudies-boxs {
+.main-Services{
+    margin-top: 5rem;
+}
+.main-Services__title {
     display: flex;
-    padding-top: 3rem;
+    align-items: center;
+}
+.main-Services__headline {
+    font-size: 2.4rem;
+    margin-right: 3rem;
+    display: inline;
+    padding: 0.4rem .8rem;
+    border-radius: .5rem;
+    line-height: 2.3rem;
+    /*border: #b9ff66 solid 1px;*/
+    background-color: #b9ff66;
+}
+.main-Services__text {
+    font-size: 1rem;
+    font-family: SpaceGrotesk-Medium;
+    width: 43%;
+}
+.main-Services-boxs {
+    display: flex;
+    margin-top: 5rem;
     padding-bottom: 3rem;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -139,9 +161,10 @@
     height: 19.375rem;
     border: 1px solid black;
 }
-i {
+.fa-arrow-up-right {
     padding-top: 0.52rem;
     text-align: center;
+    rotate: +15deg;
     border-radius: 100%;
     font-size: 2rem;
     height: 3rem;
@@ -150,9 +173,23 @@ i {
     color: var(--color-green);
 
 }
+.box-content__links i.fa-arrow-up-right {
+    padding-top: 0.52rem;
+    text-align: center;
+    rotate: +15deg;
+    border-radius: 100%;
+    font-size: 2rem;
+    height: 3rem;
+    width: 3rem;
+0
+    color: var(--color-green);
+}
+.fa-arrow-up-right::before {
+    content: "";
+}
 .box-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     width: 100%;
 
@@ -160,6 +197,7 @@ i {
 .box-content__warper {
     display: flex;
     height: 100%;
+    margin-right: 2rem;
     flex-direction: column;
     justify-content: space-between;
     }
@@ -167,8 +205,11 @@ i {
     display: flex;
     /*justify-content: center;*/
     align-items: center;
+
 }
 .box-content__links .box-content__link {
+    font-family: SpaceGrotesk-Medium;
+    color: var(--color-black);
     text-decoration: none;
     font-size: 1.3rem;
     margin-left: 1rem;
@@ -180,17 +221,24 @@ i {
     display: inline;
     padding: 0 0.7rem;
     border-radius: .5rem;
-    line-height: 2.3rem;
+    line-height: 2.1rem;
     /*border: #b9ff66 solid 1px;*/
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     background-color: #b9ff66;
 }
 .box-content__title-green h4 {
     display: inline;
     padding: 0 0.7rem;
     border-radius: .5rem;
-    line-height: 2.3rem;
+    line-height: 2.1rem;
     /*border: #b9ff66 solid 1px;*/
-    font-size: 1.9rem;
+    font-size: 1.7rem;
     background-color: white;
+}
+.box-content__img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 90%;
 }
