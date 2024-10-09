@@ -3,8 +3,8 @@
     --color-grey: #f3f3f3;
     --color-dark: #191a23;
     --color-black: #000000;
-
 /*    header class */
+
 }
 .header {
     font-family: SpaceGrotesk-Regular;
@@ -241,4 +241,27 @@
     align-items: center;
     width: 90%;
     height: 90%;
+}
+.cta {
+    background-color: var(--color-grey);
+    padding: 3.75rem;
+    border-radius: 3rem;
+    position: relative;
+}
+.cta .content {
+    width: 50%;
+    max-width: 500px;
+}
+.cta .img {
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.cta .img img {
+
+    height: 100%;
+    width: 100%;
 }
