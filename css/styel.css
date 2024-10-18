@@ -265,3 +265,8 @@
     height: 100%;
     width: 100%;
 }
+
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+}
